@@ -6,6 +6,6 @@ type vendor_device_prop, property_type;
 
 vendor_public_prop(vendor_payment_security_prop)
 
-type thermal_normal_prop, property_type;
+type vendor_thermal_normal_prop, property_type;
 
 type vendor_touchfeature_prop, property_type;
