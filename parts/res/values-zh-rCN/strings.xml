@@ -16,10 +16,10 @@
 -->
 <resources>
     <!-- Ambient settings -->
-    <string name="ambient_enable">Use ambient display</string>
+    <string name="ambient_enable">启用环境显示</string>
 
     <!-- DC dimming settings -->
-    <string name="dc_dimming_enable_title">DC Dimming</string>
-    <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
-    <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
+    <string name="dc_dimming_enable_title">DC调光</string>
+    <string name="dc_dimming_enable_summary">降低弱光环境下对眼睛的损害</string>
+    <string name="dc_dimming_enable_summary_not_supported">当前内核不支持DC调光</string>
 </resources>
