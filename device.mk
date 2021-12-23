@@ -325,12 +325,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     AOSPACasSettings \
     AOSPACasSystemUI \
-    CarrierConfigResCommon \
-    FrameworksResCommon \
     FrameworksResTarget \
-    SystemUIResCommon \
-    TelephonyResCommon \
-    WifiResCommon \
     WifiResTarget \
     DeviceFrameworks \
     DeviceSystemUI
@@ -344,7 +339,9 @@ TARGET_BOARD_PLATFORM := kona
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
-    perf
+    overlay \
+    perf \
+    telephony
     
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
