@@ -21,8 +21,6 @@ $(call inherit-product, vendor/xiaomi/cas/cas-vendor.mk)
 
 # Platform
 PRODUCT_BOARD_PLATFORM := kona
-# AOSPA Platform
-TARGET_BOARD_PLATFORM := kona
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -349,6 +347,9 @@ PRODUCT_PACKAGES += \
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
+
+# Platform AOSPA 
+TARGET_BOARD_PLATFORM := kona
 
 # QMI
 PRODUCT_PACKAGES += \
