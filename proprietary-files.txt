@@ -1,4 +1,4 @@
-# All blobs below are extracted - from V12.5.6.0.RJJCNXM, unless pinned
+# All blobs below are extracted - from MIUI12.5 dev 21.12.8, unless pinned
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
