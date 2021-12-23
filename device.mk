@@ -344,10 +344,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # Platform AOSPA 
 TARGET_BOARD_PLATFORM := kona
 
@@ -356,6 +352,9 @@ PRODUCT_PACKAGES += \
     libjson
 
 # QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+    
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
 
