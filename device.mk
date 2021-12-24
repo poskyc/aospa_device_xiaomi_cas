@@ -103,8 +103,7 @@ PRODUCT_COPY_FILES += \
 
 # Biometrics
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    $(LOCAL_PATH)/configs/lineage/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.kona
@@ -258,10 +257,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     AOSPACasSettings \
     AOSPACasSystemUI \
-    FrameworksResTarget \
-    WifiResTarget \
     DeviceFrameworks \
-    DeviceSystemUI
+    DeviceSystemUI \
+    FrameworksResTarget \
+    WifiResTarget
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -280,13 +279,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     nq-nfc \
     overlay \
     perf \
-    telephony
+    telephony \
     usb \
     vibrator \
     wlan
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
 
 # RenderScript
 PRODUCT_PACKAGES += \
@@ -298,9 +294,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
-    android.system.net.netd@1.1.vendor \
-    librmnetctl \
-    libxml2
+    android.system.net.netd@1.1.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
